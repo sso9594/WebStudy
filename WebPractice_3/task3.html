@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #top_section{
+            list-style-type: none;
+        }
+        li{
+            display: inline-block;
+            margin-right: 20px;
+        }
+        li:hover{
+            text-decoration: underline;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        #static1{
+            float: left;
+        }
+        #static2{
+        }
+        #link{
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            background-color: aqua;
+            border:1px solid #555;
+            text-decoration: none;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        header{
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header><h2>My Homepage</h2></header>
+    <ul id="top_section">
+        <li>HOME</li>
+        <li>BLOG</li>
+        <li>ABOUT</li>
+        <li>CONTACT</li>
+    </ul>
+    <nav id="static1"><img src="/img1.png"></nav>
+    <nav id="static2">
+        <h2>Introduce</h2>
+        <p>
+            Hello! My name is ~~~~~<br>
+            My major is ~~~~~~ <br>
+            My number is ~~~~ <br>
+            My hobby is ~~~~ <br>
+            
+        </p>
+    </nav>
+    <hr style="clear: left;">
+    <h2>test</h2><br>
+    <h2>test</h2><br>
+    <h2>test</h2><br>
+    <h2>test</h2><br>
+    <h2>test</h2><br>
+
+    <a id="link" href="#top_section">UP</a>
+</body>
+</html>
