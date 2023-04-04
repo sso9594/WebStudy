@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    header {
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 20px;
+        background-color: cadetblue;
+        color: white;
+    }
+
+    #headerpart ul{
+        list-style-type: none; 
+        display: flex; 
+        margin-right: 20px;
+    }
+
+    #headerleft h1{
+        margin-left: 10px; 
+        font-size: 30px;
+        margin-right: 50px;
+    }
+
+
+    div{
+        display: flex; 
+        align-items: center;
+    }
+
+    #headimg {
+        width: 200px;
+        height: 70px;
+    }
+
+    #submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        border: 1px solid gray;
+        padding: 10px;
+    }
+
+    #headermenu{
+        font-size: 30px;
+        background-color: gray;
+    }
+    #headermenu li{
+        margin-right: 20px;
+    }
+
+    #headermenu #gifts:hover #submenu {
+        display: block;
+    }
+
+    #gifts {
+        position: relative;
+    }
+
+    #gifts:hover {
+        background-color: #fff;
+        color: cadetblue;
+    }
+    #submenu li{
+        list-style-type: none;
+        display: contents;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <div id="headerpart">
+            <div id="headerleft">
+                <img id="headimg" src="/WebStudy/WebHW_1/[Images] Homework1/logo.png">
+                <h1>Premium bookshop</h1>
+            </div>
+            <ul id="headermenu">
+                <li>Home</li>
+                <li>Books</li>
+                <li>
+                    <div id="gifts">Gifts
+                        <div id="submenu">
+                            <ul>
+                                <li>Kids</li>
+                                <li>Adults</li>
+                                <li>ForAll</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </header>
+</body>
+</html>

@@ -9,26 +9,69 @@
         header{
             margin-left: 100px;
             margin-right: 100px;
-            padding: 20px;
+            padding: 30px;
             background-color: cadetblue;
-        }
-        #headimg{
-            margin-right: 10px;
-            float: left;
-            width: 140px;
-            height: 70px;
-            position: relative;
-        }
-        h1{
+            overflow: hidden;
             color: white;
             position: relative;
+            font-size: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #headimg{
+            width: 200px;
+            height: 70px;
+        }
+
+        #headercontent {
+            display: flex;
+            align-items: center;
+            height: 50px;
+        }
+
+        h1{
+            padding-left: 20px;
+        }
+
+        #headermenu{
+            list-style-type: none;
+            display: flex;
+        }
+
+        #headermenu li{
+            margin-right: 20px;
+            background-color: antiquewhite;
+            color: black;
+            padding: 2px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        ul li:hover > ul{
+            display: block;
+        } 
+        #gifts{
+            visibility: hidden;
         }
     </style>
 </head>
 <body>
     <header>
-        <img id="headimg" src="/WebStudy/WebHW_1/[Images] Homework1/logo.png">
-        <h1>Premium bookshop</h1>
-    </header>
+        <div id="headercontent">
+            <img id="headimg" src="/WebStudy/WebHW_1/[Images] Homework1/logo.png">
+            <div id="headercontent">
+            <h1>Premium bookshop</h1>
+            <ul id="headermenu">
+                <li>Home</li>
+                <li>Books</li>
+                <li id="gifts">Gifts
+                    <ul>
+                        <li>Kids</li>
+                        <li>Adults</li>
+                        <li>For All</li>
+                    </ul>
+                </li>
+          </ul>
+        </div>
+      </header>
 </body>
 </html>
