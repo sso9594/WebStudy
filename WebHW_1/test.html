@@ -40,36 +40,66 @@
     #submenu {
         display: none;
         position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: white;
-        border: 1px solid gray;
-        padding: 10px;
+        left: 105%;
+    }
+
+    #submenu > ul{
+        margin: 0;
+        padding: 0;
     }
 
     #headermenu{
         font-size: 30px;
-        background-color: gray;
     }
     #headermenu li{
         margin-right: 20px;
+        background-color: gainsboro;
+        color: black;
     }
 
-    #headermenu #gifts:hover #submenu {
-        display: block;
+    #headermenu #gifts:hover > #submenu {
+        display: inline-block;
     }
 
     #gifts {
+        padding-left: 20px;
+        padding-right: 20px;
         position: relative;
     }
 
     #gifts:hover {
-        background-color: #fff;
-        color: cadetblue;
+        background-color: gray;
     }
     #submenu li{
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
         list-style-type: none;
-        display: contents;
+        display: block;
+    }
+    #submenu li a:hover{
+        background-color: gray;
+    }
+    nav{
+        text-align: center;
+        padding: 20px;
+    }
+    #contentbox_1{
+        margin-top: 100px;
+        background-color: cadetblue;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+    }
+    table{
+        margin: auto;
+        width: 80%;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+    th,td{
+        padding: 10px;
+        
     }
   </style>
 </head>
@@ -81,21 +111,92 @@
                 <h1>Premium bookshop</h1>
             </div>
             <ul id="headermenu">
-                <li>Home</li>
-                <li>Books</li>
+                <li style="padding-left: 20px; padding-right: 20px;">Home</li>
+                <li style="padding-left: 20px; padding-right: 20px;">Books</li>
                 <li>
                     <div id="gifts">Gifts
                         <div id="submenu">
                             <ul>
-                                <li>Kids</li>
-                                <li>Adults</li>
-                                <li>ForAll</li>
+                                <li><a href="#">Kids</a></li>
+                                <li><a href="#">Adults</a></li>
+                                <li><a href="#">ForAll</a></li>
                             </ul>
                         </div>
                     </div>
                 </li>
             </ul>
         </div>
-      </header>
+    </header>
+    <nav>
+        The Best Bookstore Online<br>
+        Over 6 million books ready for shipment within 24 hours and 4.5 million eBooks to download now.
+    </nav>
+    <hr>
+    <nav style="float: left; width: 50%;">
+        <h2>The President Is Missing</h2>
+        <p>Please join us in welcoming President Bill Clinton and the world's bestselling author<br>
+        James Patterson to celebrate the release of their new novel. The President is<br>
+        Missing. A limited of wristbands for event access will be distributed<br>
+        beginning at 9am the day of the even</p>
+        <img src="/WebStudy/WebHW_1/[Images] Homework1/clinton.jpg">
+        <hr style="border-style: dotted;">
+        <h2>True Roots: A Mindful Kitchen with More Than 100<br>
+        Recipes Free of Gluten, Dairy, and Refined Sugar</h2>
+        <p>In her first book, Kristin Cavallari shared her personal journey along with her tips on<br>
+        everything from style to relationships. And now, with True Roots, Cavallari shows<br>
+        you that improving the way you eat doesn't have to be difficult - a clean and toxin<br>
+        free diet can and should be fun easy, and enjoyable. She learend the hard way that<br>
+        dieting leads nowhere good, and that a clean lifestyle is the ticket to feeling and<br>
+        being healthy</p>
+        <img src="/WebStudy/WebHW_1/[Images] Homework1/roots.jpg">
+        <hr style="border-style: dotted;">
+        <h2>Selling Boldly: Applying the New Science of Positive<br>
+        Psychology to Dramatically Increase Your Confidence,<br>
+        Happiness, and Sales</h2>
+        <p>Fear is reason most salespeople don't like to pick up the phone. Fear is the<br>
+        reason we don't ask for the business more, even though our customers want to buy<br>
+        from us.</p>
+        <img src="/WebStudy/WebHW_1/[Images] Homework1/selling.jpg">
+        <hr style="border-style: dotted;">
+        <h2>I've Got My Eyes on You (B&N Exclusive Edition)</h2>
+        <p>A new thriller from #1 New York Times bestselling author and "Queen of Suspense"<br>
+        Mary Higgins Clark. After a party when her parents are away, eighteen-year-old Kerry<br>
+        Dowling is found fully dressed at the bottom of the familly pool. The immediate<br>
+        suspect is her boyfriend who had a bitter argument with her at the party. Then there
+        is a twenty-year-old neighbor who was angry because she didn't invite him to the<br>
+        party.</p>
+        <img src="/WebStudy/WebHW_1/[Images] Homework1/mary.jpg">
+        <hr style="border-style: dotted;">
+        <table border="1">Our prices
+            <th>Books</th>
+            <th>Year</th>
+            <th>Price</th>
+            <tr>
+                <td>True Roots</td>
+                <td>2012</td>
+                <td>20$</td>
+            </tr>
+            <tr>
+                <td>Harry Potter</td>
+                <td>2006</td>
+                <td>38$</td>
+            </tr>
+            <tr>
+                <td>The Outllers</td>
+                <td>2015</td>
+                <td>12$</td>
+            </tr>
+            <tr>
+                <td>The Big Data</td>
+                <td>2022</td>
+                <td>26$</td>
+            </tr>
+        </table>
+    </nav>
+    <nav style="float: left;">
+        <p id="contentbox_1">10% OFF $35+ | 15% OFF $60+<br>
+        *USE CODE: HAPPYAPRIL</p>
+    </nav>
+
 </body>
 </html>
