@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 50%;
+            border: 1px solid #444444;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid #444444;
+            padding: 10px;
+        }
+        th{
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function OnMouseover(n){
+            n.style.backgroundColor="blue";
+        }
+        function OnMouseout(n){
+            n.style.backgroundColor="transparent";
+        }
+    </script>
+</head>
+<body>
+    <table border="1">
+        <th></th>
+        <th><b></b>Water</b></th>
+        <th><b>Air</b></th>
+        <th><b>Fire</b></th>
+        <th><b>Earth</b></th>
+        <tr onmouseover="OnMouseover(this)" onmouseout="OnMouseout(this)">
+            <td>Spring Thunderclouds</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>NO</td>
+        </tr>
+        <tr onmouseover="OnMouseover(this)" onmouseout="OnMouseout(this)">
+            <td>Roasting chestnuts</td>
+            <td>No</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr onmouseover="OnMouseover(this)" onmouseout="OnMouseout(this)">
+            <td>Winter snowbanks</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>Yes</td>
+        </tr>
+        <tr onmouseover="OnMouseover(this)" onmouseout="OnMouseout(this)">
+            <td>Ice cream on a hot summer day</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+</body>
+</html>

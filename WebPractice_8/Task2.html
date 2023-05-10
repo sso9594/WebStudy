@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Document Object</h1>
+    <h2>DOM innerHTML Property</h2>
+    <p class="target">JavaScript DOM is fun to learn</p>
+    <input type="button" value="Try it" onclick="change();">
+    <p id="demo"></p>
+    <script>
+        function change(){
+            var result = document.getElementsByTagName("p")[0].innerHTML;
+            document.getElementById("demo").innerHTML='<h1 style="color: green;">'+result+'</h1>';
+        }
+    </script>
+</body>
+</html>

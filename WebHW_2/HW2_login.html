@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("/WebHW_2/img/emart2.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            color: white;
+            font-size: 50pt;
+            margin-left: 50px;
+        }
+        #div1{
+            float: left;
+        }
+        #div2{
+            display: inline-block;
+            float: right;
+        }
+        form{
+            margin-right: 100px;
+            color: white;
+            margin-top: 50px;
+        }
+        input{
+            width: 200px;
+            height: 30px;
+        }
+
+    </style>
+    <script>
+        function login (){
+            var id = document.getElementById("id_value").value;
+            var pw = document.getElementById("pw_value").value;
+            if(id=='admin'){
+                if(pw=='1234'){
+                    alert('Login Success!');
+                    location.href="HW_main.html";
+                }
+                else{
+                    alert('Login Failed');
+                }
+            }
+            else{
+                alert('Login Failed');
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <h1>Happy<br>Shopping</h1>
+    </div>
+    <div id="div2">
+        <form>
+            ID<br><input type="text" id="id_value"></p>
+            PW<br><input type="password" id="pw_value"></p>
+            <input type="button" value="Login" style="width: 208px; background-color: green;" onclick="login();">
+        </form>
+    </div>
+</body>
+</html>

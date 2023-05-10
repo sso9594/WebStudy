@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Document Object</h1>
+    <h2>The querySelectorAll() Method</h2>
+    <p>Add a background color all elements with class="example";</p>
+    <h2 class="example">A heading</h2>
+    <p class="example">A paragraph</p>
+    <script>
+        const node=document.getElementsByTagName("h2")
+        const nodeList = document.getElementsByClassName("example")
+        for(let i=0;i<node.length;i++){
+            node[i].style.backgroundColor="blue";
+        }
+        for(let i=0;i<nodeList.length;i++){
+            nodeList[i].style.backgroundColor="yellow";
+        }
+    </script>
+</body>
+</html>

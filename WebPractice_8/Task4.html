@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Change(){
+            var NodeList = document.getElementsByClassName("target");
+            for(let i=0;i<NodeList.length;i++){
+                NodeList[i].src="/WebPractice_8/test5.jpg";
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Change" onclick="Change();">
+    <br>
+    <table border="1">
+        <th> <img src="/WebPractice_8/test1.jpg"> </th>
+        <th> <img src="/WebPractice_8/test2.jpg"> </th>
+        <th> <img class="target" src="/WebPractice_8/test3.jpg"> </th>
+        <th> <img class="target" src="/WebPractice_8/test4.jpg"> </th>
+    </table>
+</body>
+</html>

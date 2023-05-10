@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Function</h1>
+    <script>
+        function tosquar(f){
+            return f * f;
+        }
+        function tohalf(f){
+            return f/2;
+        }
+        function circle(f){
+            return f*f*Math.PI;
+        }
+        function topercent(f,p){
+            return f/100*p;
+        }
+        document.write("The result of squaring the number 3 is "
+            +tosquar(3));
+        document.write("<br />");
+        document.write("Half of 5 is "+tohalf(5));
+        document.write("<br />");
+        document.write(tohalf(10)+" is 50% of 10");
+        document.write("<br />");
+        document.write("The result of squaring the number 2 is "+tosquar(2));
+        document.write("<br />");
+        document.write("The area of circle with radius 2 is "+circle(2));
+        document.write("<br />");
+        document.write("<br />");
+        document.write("Do crazy stuff")
+        document.write("<br />");
+        document.write("Half of 5 is "+tohalf(5));
+        document.write("<br />");
+        document.write("The result of squaring the number 2.5 is "
+            +tosquar(2.5));
+        document.write("<br />");
+        document.write("The result of squaring the number 2.5 is "
+            +tosquar(tosquar(2.5)));
+        document.write("<br />");
+        document.write("The area of circle with radius 6.25 is "+circle(6.25));
+        document.write("<br />");
+        document.write(topercent(122.7184630308513,5.092958178940651)+" is 5.092958178940651% of 122.7184630308513");
+
+    </script>
+</body>
+</html>
